@@ -1,5 +1,5 @@
 # Proyecto
 Digital House
-primer estado :woman_office_worker:	
-segundo estado :man_scientist:
-tercer estado :factory_worker:	
+- **_primer estado_** :woman_office_worker:	
+- **_segundo estado_** :man_scientist:
+- **_tercer estado_** :factory_worker:	
