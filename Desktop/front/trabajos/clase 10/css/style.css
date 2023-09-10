@@ -1,0 +1,256 @@
+* {
+    /* border: 1px solid black; */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+/* Header */
+.h3__container {
+    background: #D1891C;
+    padding: 5px 0 5px 1rem;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.h1__container {
+    background: #00669F;
+    box-shadow: 0px 10px 7px 0px rgba(0, 0, 0, 0.25);
+    z-index: 20;
+    border: 1px solid rgba(0, 0, 0, 0.00);
+    position: sticky;
+    top: -1px;
+    padding: 1rem 1rem;
+}
+
+h1 {
+    color: #FFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Botón + */
+
+.plus__button {
+    position: fixed;
+    display: flex;
+    right: 1rem;
+    bottom: 2rem;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #00669F;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 5px -1px rgba(71, 71, 71, 0.7);
+
+}
+
+.plus {
+    text-decoration: none;
+    color: #F3F3F3;
+    font-size: 2rem;
+}
+
+/* Cards */
+
+.card__container {
+    width: 320px;
+    display: flex;
+    z-index: 0;
+    box-shadow: 0px 5px 5px -1px rgba(71, 71, 71, 0.5);
+    border-radius: 16px 16px 0 0;
+    background-color: #F3F3F3;
+    margin: 2rem 0;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.card__header {
+    position: relative;
+    height: 200px;
+    display: flex;
+    border-radius: 16px 16px 0 0;
+    justify-content: center;
+}
+
+.avatar {
+    position: absolute;
+    width: 120px;
+    border-radius: 50%;
+    bottom: -60px;
+    z-index: 10;
+}
+
+.card__container svg {
+    width: 30px;
+    position: absolute;
+    left: 1rem;
+    padding: 0;
+    z-index: 10;
+}
+
+.card__background {
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 16px 16px 0 0;
+}
+
+.card__main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px 0px;
+    font-size: 14px;
+    height: 290px;
+}
+
+.card__h2 {
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+}
+
+.p__container {
+    height: 160px;
+    margin: 0;
+}
+
+.card__main p {
+    /* padding: 1rem 0; */
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card__footer {
+    padding: 0 0 1rem 0;
+}
+
+.card__footer a {
+    top: 0;
+    text-decoration: none;
+    color: #F3F3F3;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    background: #00669F;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card__harley {
+    display: none;
+}
+
+.card__superman2 {
+    display: none;
+}
+
+.card__harley h2 {
+    text-transform: capitalize;
+}
+
+/* Footer */
+.footer {
+    background: #00669F;
+}
+
+.footer .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rights {
+    color: #F3F3F3;
+    padding: 1rem 0;
+}
+
+.logo {
+    height: 25px;
+    padding: 10px 0px 30px 0;
+}
+
+@media (min-width: 750px) {
+    .main .container, .h3__container .container, .h1__container .container, .footer .container {
+        max-width: 850px;
+        margin: auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .h3__container .container {
+        padding: 5px 0;
+        justify-content: left;
+    }
+
+    .h3__container {
+        padding-left: 0;
+    }
+
+    h3, h1 {
+        width: 100%;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card__container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .card__harley {
+        display: block;
+    }
+
+    .card__superman {
+        display: none;
+    }
+
+    .card__superman2 {
+        display: block;
+    }
+
+    .footer .container {
+        align-items: center;
+    }
+
+    .logo {
+        position: absolute;
+        padding: 0;
+        right: 0px;
+    }
+}
